@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Is Employee Monitoring Legal? What Every Employer Must Know in 2026"
-date: 2026-10-17 10:00:00 +0530
+date: 2026-10-17 14:00:00 +0530
 categories: [general]
 tags: [employee monitoring, compliance]
 description: "Learn when employee monitoring is legal in 2026, and how to stay compliant on notice, consent and data handling."
