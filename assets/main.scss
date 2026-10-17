@@ -1,0 +1,131 @@
+---
+---
+
+@import "minima";
+
+/* ===== TeamTreck custom design (applies to every page and post) ===== */
+
+$accent: #4f46e5;
+$accent-dark: #4338ca;
+$text: #1f2937;
+$muted: #6b7280;
+$border: #e5e7eb;
+$soft: #f8fafc;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: $text;
+  background: #ffffff;
+  line-height: 1.7;
+}
+
+a, a:visited { color: $accent; }
+a:hover { color: $accent-dark; }
+
+.wrapper { max-width: 760px; }
+
+/* Header */
+.site-header {
+  border-top: 4px solid $accent;
+  border-bottom: 1px solid $border;
+  background: #ffffff;
+}
+.site-title, .site-title:visited {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: $text;
+}
+.site-nav .page-link { color: $muted; font-weight: 500; }
+.site-nav .page-link:hover { color: $accent; text-decoration: none; }
+
+/* Home page intro */
+.hero {
+  padding: 40px 0 28px;
+  border-bottom: 1px solid $border;
+  margin-bottom: 32px;
+}
+.hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.hero p { font-size: 1.15rem; color: $muted; margin: 0; }
+
+/* Post list as cards */
+.post-list-heading {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: $muted;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.post-list { margin-left: 0; list-style: none; }
+.post-list > li {
+  background: #ffffff;
+  border: 1px solid $border;
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin-bottom: 18px;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+}
+.post-list > li:hover {
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  transform: translateY(-2px);
+  border-color: #c7d2fe;
+}
+.post-list h3 { margin: 4px 0 8px; font-size: 1.35rem; line-height: 1.35; }
+.post-list .post-link, .post-list .post-link:visited { color: $text; font-weight: 600; }
+.post-list .post-link:hover { color: $accent; text-decoration: none; }
+.post-list > li p {
+  color: $muted;
+  font-size: 0.97rem;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.post-meta { color: $muted; font-size: 0.85rem; }
+
+/* Single post page */
+.post-header {
+  margin: 32px 0 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $border;
+}
+.post-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+}
+.post-content { font-size: 1.07rem; }
+.post-content h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-top: 2.2rem;
+}
+.post-content h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.6rem; }
+.post-content blockquote {
+  border-left: 4px solid $accent;
+  background: $soft;
+  color: $text;
+  font-style: normal;
+  padding: 12px 18px;
+  border-radius: 0 8px 8px 0;
+}
+.post-content img { border-radius: 10px; }
+
+/* Footer */
+.site-footer { background: $soft; border-top: 1px solid $border; }
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 1.9rem; }
+  .post-title { font-size: 1.8rem; }
+  .post-list > li { padding: 18px; }
+}
