@@ -10,6 +10,8 @@ theme: minima
 minima:
   skin: classic
 
+show_excerpts: true
+
 permalink: /:year/:month/:day/:title/
 timezone: Asia/Kolkata
 
