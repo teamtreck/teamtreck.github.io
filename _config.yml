@@ -1,0 +1,26 @@
+title: TeamTreck Blog
+description: Articles, updates and insights from the TeamTreck team.
+author: TeamTreck
+email: sonali@teamtreck.tech
+url: "https://teamtreck.github.io"
+baseurl: ""
+lang: en
+
+theme: minima
+minima:
+  skin: classic
+
+permalink: /:year/:month/:day/:title/
+timezone: Asia/Kolkata
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+header_pages:
+  - about.md
+
+exclude:
+  - README.md
+  - post-template.md
